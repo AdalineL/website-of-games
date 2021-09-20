@@ -1,0 +1,380 @@
+
+
+
+#objects
+{
+	position: absolute;
+	top: 10px;
+	left: 80%;
+}
+
+#buttons
+{
+	display:inline;
+	position:absolute;
+    	top:210px;
+	left: 35px;
+}
+
+#dormRoom
+{
+	position: absolute;
+	border-style: solid; 
+	border-width: 5px; 
+	height:200px; 
+	width:200px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+}
+
+#fancyBox
+{
+	position: relative;
+	border-style: solid; 
+	border-width: 5px; 
+	height:500px; 
+	width:500px;
+	overflow: hidden;
+	position: relative; 
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+}
+
+#cardBox
+{
+	position: relative;
+	border-style: solid; 
+	border-width: 5px; 
+	height:500px; 
+	width:500px;
+	position: relative; 
+
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+
+}
+
+
+#madlibBox
+{
+	position: relative;
+	border-style: solid; 
+	border-width: 5px; 
+	height:500px; 
+	width:500px;
+	position: relative; 
+
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+
+}
+
+#madlibStuff
+{
+	position: absolute;
+	left: 20px;
+	top: 50px;
+}
+
+
+#directions
+{
+	position: relative;
+	border-style: solid; 
+	border-width: 5px; 
+	height:500px; 
+	width:500px;
+	position: relative; 
+
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+
+#roomDirectionsBox
+{
+	position: relative;
+	border-style: solid; 
+	border-width: 5px; 
+	height:500px; 
+	width:500px;
+	position: relative; 
+
+	left: 50%;
+	transform: translateX(-50%);
+
+	display: none;
+}
+
+#cardsDirectionsBox
+{
+	position: relative;
+	border-style: solid; 
+	border-width: 5px; 
+	height:500px; 
+	width:500px;
+	position: relative; 
+
+	left: 50%;
+	transform: translateX(-50%);
+
+	display: none;
+}
+
+#madlibDirectionsBox
+{
+	position: relative;
+	border-style: solid; 
+	border-width: 5px; 
+	height:500px; 
+	width:500px;
+	position: relative; 
+
+	left: 50%;
+	transform: translateX(-50%);
+
+	display: none;
+}
+
+
+
+table 
+{
+	border-collapse: collapse;
+}
+
+table, td, th 
+{
+  	border: none;
+}
+
+td, th
+{
+	text-align: center;
+}
+
+
+.flexbox
+{
+	margin-top: 50px;
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-between; 
+	flex-wrap: wrap;
+}
+
+
+#caption 
+{
+	position: absolute;
+	bottom: 0px;	
+
+	padding: 10px;
+	box-sizing: border-box;
+	color: white;
+	font-size: 14pt;
+	font-family: sans-serif;
+	background-color: #4ab7ff;
+	opacity: 0.5;
+
+	width: 100%;
+}
+
+#photoSection 
+{
+	position: relative;
+	width: 500px;
+	height: 500px;
+	
+}
+
+#left 
+{
+	position: absolute;
+	left: 0px;
+	width: 50%;
+	height: 100%;
+}
+
+#right 
+{
+	position: absolute;
+	right: 0px;
+	width: 50%;
+	height: 100%;
+}
+
+#MDcaption 
+{
+	position: absolute;
+	bottom: 0px;	
+
+	padding: 10px;
+	box-sizing: border-box;
+	color: white;
+	font-size: 14pt;
+	font-family: sans-serif;
+	background-color: #4ab7ff;
+	opacity: 0.5;
+
+	width: 100%;
+}
+
+#MDphotoSection 
+{
+	position: relative;
+	width: 500px;
+	height: 500px;
+}
+
+#MDleft 
+{
+	position: absolute;
+	left: 0px;
+	width: 50%;
+	height: 100%;
+}
+
+#MDright 
+{
+	position: absolute;
+	right: 0px;
+	width: 50%;
+	height: 100%;
+}
+
+#DRcaption 
+{
+	position: absolute;
+	bottom: 0px;	
+
+	padding: 10px;
+	box-sizing: border-box;
+	color: white;
+	font-size: 14pt;
+	font-family: sans-serif;
+	background-color: #4ab7ff;
+	opacity: 0.5;
+
+	width: 100%;
+}
+
+#DRphotoSection 
+{
+	position: relative;
+	width: 500px;
+	height: 500px;
+}
+
+#DRleft 
+{
+	position: absolute;
+	left: 0px;
+	width: 50%;
+	height: 100%;
+}
+
+#DRright 
+{
+	position: absolute;
+	right: 0px;
+	width: 50%;
+	height: 100%;
+}
+
+table.center {
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+#dirButtons
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 65px;
+}
+
+
+.dirButton 
+{
+  	border-radius: 4px;
+  	background-color: #33AAFF;
+  	color: white;
+  	transition: 0.5s;
+  	height:30px;
+  	cursor: pointer;
+  	opacity: 0.6;
+  	box-shadow: 0 4px #999;
+}
+
+.dirButton:active 
+{
+  	box-shadow: 0 1px #666;
+  	transform: translateY(3px);
+}
+
+.dirButton span 
+{
+  	display: inline-block;
+  	position: relative;
+  	transition: 0.5s;
+}
+
+.dirButton span:after 
+{
+  	content: '\00bb';
+  	position: absolute;
+  	opacity: 0;
+  	top: 0;
+  	right: -5px;
+  	transition: 0.5s;
+}
+
+.dirButton:hover span 
+{
+  	padding-right: 10px;
+}
+
+.dirButton:hover span:after 
+{
+  	opacity: 1;
+  	right: 0;
+}
+
+.dirButton:hover {opacity: 1}
+
+.keyButtons 
+{
+	border: none;
+	background: #406cb8;
+	color: white;
+	padding: 7px;
+	transition: all 0.3s;
+	border-radius:2em;
+}
+
+button:focus {outline:0;}
+
+.keyButtons:hover 
+{	
+	color: #406cb8;
+	font-weight: 700;
+	letter-spacing: 1px;
+	background: none;
+	box-shadow: 0px 5px;
+	transition: all 0.3s;
+}
+
+.keyButtons:active 
+{
+  	box-shadow: 0 1px;
+  	transform: translateY(3px);
+}
+
+

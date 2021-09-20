@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+
+<title>Room Setup</title>
+<link rel="stylesheet" href="gameSite.css">
+</head>
+<body>
+
+
+	<script src="furniture.js" defer></script>
+
+	<script src="photos.js" defer></script>
+	<script src="MDphotos.js" defer></script>
+	<script src="DRphotos.js" defer></script>
+
+	<script src="gameSite.js" defer></script>
+
+	<h1 style="text-align: center;">Welcome!</h1>
+	<h2 style="text-align: center;">Choose a button to get started</h2>
+
+	<table class="center">
+  		<tr>
+    			<td><button id="roomBtn" onclick="roomFunc()"  class="keyButtons">Decorate Your Room</button></td>
+    			<td><button id="cardsBtn" onclick="cardsFunc()"  class="keyButtons">Matching Cards</button></td>
+  		</tr>
+  		<tr>
+    			<td><button id="madlibBtn" onclick="madlibFunc()"  class="keyButtons">Mad Lib</button></td>
+    			<td><button id="directionsBtn" onclick="directionsFunc()"  class="keyButtons">Directions</button></td>
+  		</tr>
+	</table>
+
+	<br>
+
+	<div id="fancyBox">
+		<h2 style="position:absolute; left: 30%; z-index: 2">Decorate Your Room</h2>
+		<div id="dormRoom">
+			<div id="buttons">
+				<button id="cleanUpBtn" onclick="cleanUpFunc()">Cleanup</button>
+				<button id="restartBtn" onclick="restartFunc()">Restart</button>
+			</div>
+		</div>
+		<div id="objects"></div>
+	</div>
+
+
+	<div id="cardBox">
+		<h2 style="position:absolute; left: 35%; z-index: 2">Matching Cards</h2>
+		<div class = flexbox>
+			<div class = card>
+				<img alt="1 clubs" src="img/back.png" onclick="change1c()" id="1c"/>
+			</div>	
+
+			<div class = card>
+				<img alt="1 hearts" src="img/back.png" onclick="change1h()" id="1h"/>
+			</div>
+
+			<div class = card>
+				<img alt="2 clubs" src="img/back.png" onclick="change2c()"  id="2c"/>
+			</div>
+
+			<div class = card>
+				<img alt="2 hearts" src="img/back.png" onclick="change2h()"  id="2h" />
+			</div>
+
+			<div class = card>
+				<img alt="3 clubs" src="img/back.png" onclick="change3c()"  id="3c" />
+			</div>
+
+			<div class = card>
+				<img alt="3 hearts" src="img/back.png" onclick="change3h()"  id="3h" />
+			</div>
+		</div>
+
+		<div class="restart" style="position: absolute; left:40%;"><input type="button" value="Restart Game" onclick="restart();" /></div>
+	</div>
+
+
+
+	<div id ="madlibBox">
+		<h2 style="position:absolute; left: 40%; z-index: 2">Mad Lib</h2>
+
+		<div id="madlibStuff">
+			<h3>Entry</h3>
+			<textarea id="userInput" rows="4" cols="50"></textarea>
+			<br>
+			<button id="makeML" onclick="makeMadLib()">Make Mad Lib</button>
+
+			<hr>
+
+			<h3>Mad Lib</h3>
+			<div id="responseList"></div>
+			<br>
+			<button id="showInputLine" onclick="showResult()">Show Result</button>
+
+			<hr>
+	
+			<h3>Result</h3>
+			<div id="responseResult"></div>
+		</div>
+
+	</div>
+
+
+
+
+	<div id="directions">
+		<h2 style="position:absolute; left: 35%; z-index: 2">How To Play</h2>
+		<p style="margin-top: 100px; text-align: center;">Click on a button below for instructions on how to play</p>
+		<p style="margin-top: 10px; text-align: center;">When you're ready to play, click on one of the buttons on the top!</p>
+
+		<div id = "dirButtons">
+			<button id="roomDirections" onclick="roomDirectionsFunc()" class="dirButton"><span>Room Directions</span></button>
+			<button id="cardsDirections" onclick="cardsDirectionsFunc()" class="dirButton"><span>Cards Directions</span></button>
+			<button id="madlibDirections" onclick="madlibDirectionsFunc()" class="dirButton"><span>Mad Lib Directions</span></button>
+		</div>
+	</div>
+
+
+	<div id="roomDirectionsBox">
+		<h2 style="position:absolute; left: 30%; z-index: 2">Decorate Your Room</h2>
+			<div id="DRphotoSection">
+			<div id="DRleft" onclick="DRleftAction()"></div>
+			<div id="DRright" onclick="DRrightAction()"></div>
+			<div id="DRcaption">
+				Click and drag furniture to begin decorating your room.
+			</div> 
+			<img alt="photo" src="img/DR1.png" id="DRphoto" style="width:500px; height:500px;"/>
+		</div>
+		
+	</div>
+
+
+	<div id="cardsDirectionsBox">
+		<h2 style="position:absolute; left: 35%; z-index: 2">Matching Cards</h2>
+		<div id="photoSection">
+			<div id="left" onclick="leftAction()"></div>
+			<div id="right" onclick="rightAction()"></div>
+			<div id="caption">
+				Cards are immediately shuffled upon load. The goal of the game is to get as many matching pairs as possible.
+			</div> 
+			<img alt="photo" src="img/CD1.PNG" id="photo" style="width:500px; height:500px;"/>
+		</div>
+
+	</div>
+
+	<div id="madlibDirectionsBox">
+		<h2 style="position:absolute; left: 40%; z-index: 2">Mad Lib</h2>
+		<div id="MDphotoSection">
+			<div id="MDleft" onclick="MDleftAction()"></div>
+			<div id="MDright" onclick="MDrightAction()"></div>
+			<div id="MDcaption">
+			Type your mad lib into the textfield under 'Entry'.
+			</div> 
+			<img alt="photo" src="img/MLD1.png" id="MDphoto" style="width:500px; height:500px;"/>
+		</div>
+	</div>
+
+</body>
+</html>
