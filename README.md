@@ -1,2 +1,2 @@
-# first-website
-First GitHub website project
+# website-of-games
+A website of short games
